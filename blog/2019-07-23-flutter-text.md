@@ -95,7 +95,7 @@ class MyApp extends StatelessWidget {
 ```
 
 如图:
-![Text widget](/blog-images/screenshot-flutter-text.png)
+![Text widget](/blog-images/screenshot-flutter-Text.png)
 
 #### 3.Text.rich和TextSpan
 
