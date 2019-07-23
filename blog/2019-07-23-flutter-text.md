@@ -17,7 +17,7 @@ TextStyle，主要用来设置文本相关样式时使用，我们先来看下Te
 <!--truncate-->
 
 如下：
-```dart
+```js
 const TextStyle({
   this.inherit = true, // 是否继承父组件样式
   this.color, // 文本颜色
@@ -49,7 +49,7 @@ const TextStyle({
 
 Text允许文字以单一样式来展示，会根据布局的约束来判断是多行展示还是单行展示。
 
-```dart
+```js
 Text(
     String data, 
     { 
@@ -104,7 +104,7 @@ class MyApp extends StatelessWidget {
 这里要注意的是TextSpan并不是一个Widget，TextSpan只能依赖于特定文本组件使用。
 并且我们可以通过继承结构看出Text继承自Widget，而TextSpan则直接继承自DiagnosticableTree。
 
-```dart
+```js
 class MyApp extends StatelessWidget {
 
   @override
@@ -142,7 +142,7 @@ class MyApp extends StatelessWidget {
 
 Text和Text.rich其实就是对RichText更上一层的封装，我们通过Text源码可以看出其build方法返回的其实就是RichText组件。
 
-```dart
+```js
 @override
 Widget build(BuildContext context) {
   ...
@@ -167,7 +167,7 @@ Widget build(BuildContext context) {
 }
 ```
 
-```dart
+```js
 // 与Text.rich用法类似
 class MyApp extends StatelessWidget {
 
@@ -206,7 +206,7 @@ class MyApp extends StatelessWidget {
 
 我们可以通过DefaultTextStyle组件来设置文本默认样式，DefaultTextStyle目的是为其子元素设置统一样式，使用如下：
 
-```dart
+```js
 DefaultTextStyle(
     style: TextStyle(
         fontSize: 16,
@@ -228,7 +228,7 @@ DefaultTextStyle(
 
 **注意**：文本样式默认是会被继承，如果我们不想继承父级样式，可以通过设置TextStyle的inherit为false即可，如下：
 
-```dart
+```js
 class MyApp extends StatelessWidget {
 
   @override
