@@ -15,6 +15,7 @@ tags: [flutter, widget]
 - Image.network：通过URL获取图像，用于加载网络图片
 - Image.file：通过本地文件获取图像
 - Image.memory：通过Uint8List获取图像  
+<!--truncate-->
 
 目前支持的图片格式有JPEG, PNG, GIF, GIF, WebP, BMP, WBMP。
 
